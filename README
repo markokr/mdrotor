@@ -1,0 +1,27 @@
+MDRotor
+=======
+
+MDRotor is rotor-machine for hash reversal.  Or in other words,
+it's bruteforce cracker for cryptographic hashes.
+
+Goal is mostly hardware benchmarking, thus it does not have
+any dict-based logic.  For more practical cracking
+use John the Ripper.
+
+It supports MD5, SHA1, SHA224/256/384/512 algorithms.
+
+
+TODO
+----
+
+- custom start point
+- remove hash from map if found
+- test mode that walk all engines
+- instead 1 char per thread, use 2 or (len - 5) chars
+  - alt: assign stacks sequentially
+
+- remove global shared data
+- prefix / suffix
+- session file
+
+
