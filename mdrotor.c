@@ -237,6 +237,7 @@ void stack_init(struct EngineThread *eng, struct RotorStack *stk, unsigned int i
 		if (top->start_len == 0) {
 			top->start_len++;
 		} else {
+			r = get_rotor(stk, 0);
 			rotate_many(stk, r);
 		}
 	} else {
